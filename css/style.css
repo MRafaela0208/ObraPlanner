@@ -1,0 +1,486 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+*{
+    --co1:#00244b;
+    --co2:#003d80;
+    --co3:#074470;
+    --co4:#01306e;
+    --co5:#0056b3;
+    --co6:#274a70;
+    --co7:#2777ce;
+    --co8:#539ff0;
+    --co9:#0059ff;
+    --co10:#07488d;
+    --co11:#003d7a;
+    --co12:#132154;
+    --co13:#324363;
+    --co14:#003cfc;
+    --co15:#ddd;
+    --co16:#d1d1d1;
+    --co17:#fff;
+    --co18:#000;
+    --co19:#333;
+    --co20:#0c382e;
+    --co21:#145413;
+    --co22:#541313;
+    --co23:#dee2e6;
+    --co24:#135545;
+    --co25:#1d8f72;
+    --co26:#020202;
+    --co27:#ffe600;
+    --fo1: 'Lexend', sans-serif;
+    --fo2: "Poppins", serif;
+    --fo3: 'Manrope', sans-serif;
+}
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Lexend', sans-serif;;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--co17);
+    padding: 20px 30px;
+    border-bottom: 2px solid var(--co23);
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: var(--co17);
+    color: var(--co11);
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.login-button:hover{
+    background-color: var(--co11);
+    color: var(--co17);
+}
+
+.register-dropdown {
+    position: relative;
+}
+
+.register-button {
+    background-color: var(--co17);
+    color: var(--co11);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 800;
+}
+
+.register-button:hover {
+    background-color: var(--co11);
+    color: var(--co17);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--co17);
+    border: 1px solid var(--co23);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-weight: 600;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 15px;
+    width: 88px;
+    color: var(--co18);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--co16);
+}
+
+.register-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.banner {
+    background-image: url('banner (2).png'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    background-repeat: no-repeat;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--co17);
+    text-shadow: 1px 1px 3px #0000008e;
+    font-weight: bolder;
+}
+
+.banner-content strong{
+    color: var(--co8);
+    text-shadow: 1px 1px 3px #0000008e;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px var(--co18);
+}
+
+.action-button {
+    background-color: var(--co27);
+    color: var(--co18);
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.action-button:hover {
+    background-color: var(--co18);
+    color: var(--co27);
+}
+
+.line-separator {
+    height: 40px; /* Altura do header */
+    width: 2px; /* Largura da linha */
+    background-color: #c4c4c4; /* Cor da linha */
+    margin: 0 10px;
+}
+
+/* artigo */
+.article {
+    display: flex;
+    align-items: center;
+    padding: 85px;
+  
+}
+.article-image {
+    flex: 1;
+    text-align: center;
+}
+.article-image img {
+    max-width: 50%;
+}
+.article-content {
+    flex: 2;
+    text-align: justify;
+}
+.article-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--co20);
+    
+}
+.article-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+strong{
+    color: var(--co24);
+    font-family: 'Manrope', sans-serif;
+}
+
+
+/* seção de benefícios */
+.benefits {
+    display: flex;
+    align-items: center;
+    padding: 85px;
+    background-color: var(--co17);
+}
+
+.benefits-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.benefit {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.benefit i {
+    font-size: 2rem;
+    color: var(--co20);
+    margin-right: 10px;
+}
+.benefits-content h2{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--co20);
+}
+.benefit p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--co18);
+    margin: 0;
+    text-align: justify;
+}
+
+.benefits-image {
+    flex: 1;
+    text-align: center;
+}
+
+.benefits-image img {
+    max-width: 50%;
+}
+
+/*Seção de Chamada para Ação */
+
+.cta-section {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--co11);
+    color: var(--co17);
+    overflow: hidden;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-section .cta-btn  {
+    padding: 15px 30px;
+    background-color: var(--co17);
+    color: var(--co11);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-section .cta-btn:hover {
+    background-color: var(--co11);
+    color: var(--co17);
+    text-decoration: none;
+}
+
+.cta-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url('wave\ \(14\).svg') repeat-x;
+    background-size: cover;
+    z-index: 0;
+}
+
+/*Footer*/
+
+
+
+.footerlp {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: var(--co4);
+    color: #fff;
+}
+
+.footer-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.footer-btn {
+    padding: 10px 20px;
+    background-color: var(--co11);
+    color: var(--co17);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.footer-btn:hover {
+    background-color: var(--co17);
+    color: var(--co11);
+}
+
+.footer-right {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: bolder;
+}
+
+.footer-links {
+    margin-right: 20px;
+    flex: 1;
+}
+
+.footer-links a {
+    display: block;
+    color: var(--co17);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links i {
+    margin-right: 10px;
+}
+
+.footer-links a i {
+    font-size: 1.2rem;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+}
+/*Linha para separar*/
+.separador {
+    width: 90%;
+    margin: 20px auto;
+    border: 0;
+    border-top: 2px solid #d1d1d1;
+}
+
+/* Estilos para a seção de planos */
+.planos-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .planos-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #01306E;
+  }
+  
+  .planos-section p {
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .planos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .plano-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plano-card h3 {
+    font-size: 1.5em;
+    color: #135545;
+  }
+  
+  .descricao {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .beneficios {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .beneficios li {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .preco {
+    font-size: 1.4em;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  .btn-contratar {
+    background-color: #01306E;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #01306E;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .btn-contratar:hover {
+    background-color: #fff;
+    color: #01306E;
+    border: 1px solid #01306E;
+  }
+  
